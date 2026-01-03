@@ -14,7 +14,7 @@ I work with models everyday.
 ---
 
 ## 📈 Annual Activity
-![Snake animation](https://github.com/abhinavaditya811/abhinavaditya811/blob/output/github-contribution-grid-snake.svg)
+![Snake animation](https://github.com/abhinavaditya811/abhinavaditya811/blob/output/github-contribution-grid-snake-dark.svg)
 
 ## 🛠️ Tech Stack
 
