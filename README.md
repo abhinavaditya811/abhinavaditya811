@@ -9,7 +9,7 @@
 ## 📖 About Me
 I work with models every day.
 
-*  **Education:** Master of Science in Data Analytics Engineering from **NEU** (GPA: 3.947/4.0) and B.Tech in Computer and Communication Engineering from **Manipal University Jaipur** (CGPA: 9.17/10.0).
+*  **Education:** Master of Science in Data Analytics Engineering from **NEU** (GPA: 3.947/4.0) and B.Tech in Computer and Communication Engineering from **Manipal University Jaipur** (CGPA: 8.13/10.0).
 
 ---
 
