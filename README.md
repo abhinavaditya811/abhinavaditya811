@@ -1,6 +1,7 @@
 # Hello! I'm Abhinav Aditya
 
 ### Data Scientist | AI Engineer | Full-Stack Engineer | Software Engineer
+[![Portfolio](https://img.shields.io/badge/Portfolio-Abhinav_Aditya.vercel.app-blue?style=for-the-badge&logo=google-chrome&logoColor=white)](https://1abhinavaditya.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Abhinav_Aditya-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abhinavaditya811/)
 
 ---
@@ -24,8 +25,6 @@ I work with models every day.
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![Scala](https://img.shields.io/badge/scala-%23DE3423.svg?style=for-the-badge&logo=scala&logoColor=white)
-![Bash](https://img.shields.io/badge/bash-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ### 🧠 AI, LLMs & Machine Learning
@@ -69,36 +68,13 @@ I work with models every day.
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
-![FFmpeg](https://img.shields.io/badge/FFmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![ElevenLabs](https://img.shields.io/badge/ElevenLabs-Voice_AI-black?style=for-the-badge)
 
----
-
-<!-- ## 🌟 Featured Projects
-
-### [Nuclear and Aviation Safety using NLP](https://github.com/Samarth1337/nuclear-aviation-safety-research)
-**Award: Best Project & Best Data Science Developer (CKIDS DataFest '23 USC)**
-Automated the outlining of safety trait violations in Nuclear Plant reports using a GuidedLDA model that learns from domain-specific "seed words".
-
-### [RAG Docu-'Mentor' ChatAI](https://github.com/Samarth1337/Advanced-Chatbot-with-Langchain-and-Llama2-Deployed-)
-A TA bot designed to replace a course assistant, capable of processing uploaded PDFs and generating conversational responses using **FAISS**, **Llama 2**, and **HuggingFace** embeddings.
-
-### [Session-Based RecSys with Continual Learning](https://github.com/Samarth1337/RecSys_Continual_Learning)
-Solved for **Concept Drift** and **Catastrophic Forgetting** in a 1M+ interaction dataset. Outperformed LSTM models by 7% using sliding windows and replay buffers.
-
-### [Yelp Recommendation System](https://github.com/Samarth1337/Recommendation_System_on_Yelp_Data)
-Implemented **Locality Sensitive Hashing (LSH)** and collaborative filtering on the Yelp dataset to achieve a high prediction accuracy (RMSE: 0.978).
-
-### [Neural Network from Scratch](https://github.com/Samarth1337/NN_from_Scratch)
-Built a layer-by-layer neural network using only **NumPy**, implementing backpropagation and optimization without high-level ML libraries. -->
-
----
 
 ## 📬 Let's Connect
 * **Email:** [aditya.ab@northeastern.edu](mailto:aditya.ab@northeastern.edu)
 * **LinkedIn:** [linkedin.com/in/abhinavaditya811/](https://www.linkedin.com/in/abhinavaditya811/)
-<!-- * **Portfolio:** [samsaxena.me](https://samsaxena.vercel.app) -->
+* **Portfolio:** [1abhinavaditya.vercel.app](https://1abhinavaditya.vercel.app/)
 
 ---
