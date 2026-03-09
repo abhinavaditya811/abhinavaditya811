@@ -13,7 +13,7 @@ From my first C++ class in 11th grade to building AI systems at scale, I've been
 
 I'm pursuing my Master's in Data Analytics Engineering at **Northeastern University** (GPA: 3.92/4.0), building on my B.Tech from **Manipal University Jaipur**. As a Software Development Engineer at **Agentdesks** (Radius Agent subsidiary), I developed AI chatbots and RAG systems for 70,000+ real estate professionals, while architecting CI/CD pipelines that cut build times by 57%.
 
-Currently, I'm working on [**CiteConnect**](https://pulp-three.vercel.app/) —an academic literature recommendation system combining semantic search with citation graph analysis. I'm building the complete MLOps pipeline on GCP to help researchers discover relevant papers more efficiently.
+Currently, I'm working on [**Workhuman HR Analytics Capstone**](https://hr-capstone.vercel.app/), an end-to-end HR analytics pipeline that leverages hybrid LLM/SLM intelligence to extract qualitative insights from employee recognition data. By routing bulk NER and extraction tasks to a fine-tuned local Llama-3-8B instead of a pure LLM API, I reduced model serving costs by 10x while maintaining output quality.
 
 Beyond tech, I bring leadership experience as a former sports captain and competitive athlete. Whether training for marathons or diving into the latest AI research, I approach every challenge with analytical thinking and determination.
 
