@@ -15,7 +15,7 @@ From my first C++ class in 11th grade to building AI systems at scale, I've been
 
 **What I'm building right now.**
 
-<!-- CURRENT:START -->Right now most of my time goes to **[Coo](https://github.com/abhinavaditya811/coo)**, a kernel that turns a natural-language request into an ordered plan of pre-defined capabilities and runs them on a Mac over HTTP. The model only picks capabilities and fills in their parameters, never writes the executing code, so there is no script-injection surface, and it splits into an always-on edge and a Mac node so you still get an honest answer while the Mac is asleep. I also keep **[Settl](https://settlnow.vercel.app)** moving, an invoice recovery engine whose decision core is deterministic and runs offline with no API keys.<!-- CURRENT:END -->
+<!-- CURRENT:START -->Most of my time goes to **[Coo](https://github.com/abhinavaditya811/coo)**, a kernel that maps a natural-language request onto an ordered plan of pre-defined capabilities and runs them on a Mac over HTTP: the model only picks capabilities and fills their parameters, never writes the executing code, so there is no script-injection surface. **[Settl](https://settlnow.vercel.app)** chases overdue invoices for freelancers, with a deterministic decision core that runs offline. Outside my own projects I review on **[caipe-io/ai-platform-engineering](https://github.com/caipe-io/ai-platform-engineering)** and send small fixes elsewhere, like an HTTP method check in **[music-posters](https://github.com/enrique7mc/music-posters)**.<!-- CURRENT:END -->
 
 Beyond tech, I bring leadership experience as a former sports captain and competitive athlete. Whether training for marathons or diving into the latest AI research, I approach every challenge with analytical thinking and determination.
 
@@ -28,7 +28,7 @@ I **thrive** at the intersection of AI, data engineering, and product developmen
 
 *Aug 20 to Sep 19, 2026*
 
-Most of the window went into Coo, splitting the kernel into an always-on edge process and a Mac-side node so a request still gets answered when the Mac is asleep, plus systemd and LaunchAgent installers and tailnet address lookup on Linux. Outside my own repos, I sent a fix to enrique7mc/music-posters (rejecting non-GET requests to /api/health with a 405) and reviewed two pull requests on caipe-io/ai-platform-engineering. The rest was steady private work and a few pushes to Settl.
+Most of the window went into splitting Coo's kernel into an always-on edge and a Mac node, along with the deployment plumbing that required: a systemd installer for a Linux VPS, a role-aware LaunchAgent installer, tailnet address lookup on Linux, and docs for the new layout. Outside my own repos I opened a PR on enrique7mc/music-posters to reject non-GET requests to /api/health with a 405, and did two reviews on caipe-io/ai-platform-engineering. Settl got a few pushes, and the remaining bulk of commits was private work.
 
 **My projects**
 
