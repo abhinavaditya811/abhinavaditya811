@@ -11,9 +11,13 @@ I work with models every day.
 
 From my first C++ class in 11th grade to building AI systems at scale, I've been driven by solving real-world problems through technology.
 
-I'm pursuing my Master's in Data Analytics Engineering at **Northeastern University** (GPA: 3.92/4.0), building on my B.Tech from **Manipal University Jaipur**. As a Software Development Engineer at **Agentdesks** (Radius Agent subsidiary), I developed AI chatbots and RAG systems for 70,000+ real estate professionals, while architecting CI/CD pipelines that cut build times by 57%.
+**What I've done so far.** I'm pursuing my Master's in Data Analytics Engineering at **Northeastern University** (GPA: 3.92/4.0), building on my B.Tech from **Manipal University Jaipur**. As a Software Development Engineer at **Agentdesks** (Radius Agent subsidiary), I developed AI chatbots and RAG systems for 70,000+ real estate professionals, while architecting CI/CD pipelines that cut build times by 57%. For my capstone I shipped the [**Workhuman HR Analytics Capstone**](https://hr-capstone.vercel.app/), an end-to-end HR analytics pipeline that pulls qualitative insight out of employee recognition data; routing bulk NER and extraction to a fine-tuned local Llama-3-8B instead of a pure LLM API cut model serving cost 10x with no loss in output quality. I also contribute to open source outside my own projects, mostly in the AI and research tooling space.
 
-<!-- CURRENT:START -->Currently, I'm working on [**Workhuman HR Analytics Capstone**](https://hr-capstone.vercel.app/), an end-to-end HR analytics pipeline that leverages hybrid LLM/SLM intelligence to extract qualitative insights from employee recognition data. By routing bulk NER and extraction tasks to a fine-tuned local Llama-3-8B instead of a pure LLM API, I reduced model serving costs by 10x while maintaining output quality.<!-- CURRENT:END -->
+**What I'm building right now.**
+
+<!-- CURRENT:START -->
+_Populating on the next scheduled run._
+<!-- CURRENT:END -->
 
 Beyond tech, I bring leadership experience as a former sports captain and competitive athlete. Whether training for marathons or diving into the latest AI research, I approach every challenge with analytical thinking and determination.
 

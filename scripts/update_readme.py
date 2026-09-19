@@ -14,6 +14,10 @@ Environment:
   ANTHROPIC_API_KEY  optional. Only used by the "api" backend.
   README_PATH        optional. Defaults to README.md next to this script's repo root.
 
+scripts/projects.json holds hand-written blurbs the narrative blends with the raw
+activity. Without an entry a project can only be described from commit subjects,
+which reads thin, so add one when you start something new.
+
 Private repositories are aggregated as counts only -- their names, URLs, and commit
 messages never leave this process and are never sent to Claude by either backend.
 """
@@ -340,6 +344,15 @@ def build_activity(contrib: dict, login: str, token: str, since: datetime) -> di
     }
 
 
+def load_projects() -> dict:
+    path = Path(__file__).resolve().parent / "projects.json"
+    try:
+        return json.loads(path.read_text())
+    except (OSError, json.JSONDecodeError) as exc:
+        print(f"projects.json unreadable ({exc}); continuing without blurbs", file=sys.stderr)
+        return {}
+
+
 def is_empty(activity: dict) -> bool:
     return not activity["repos"] and not activity["private_commits"]
 
@@ -409,11 +422,18 @@ name those repositories and say what the contribution was (a fix, a review, a fe
 Do not bury them behind personal-project work."""
 
 
-def build_prompt(payload: dict, window_label: str, current_sentence: str) -> str:
+def build_prompt(payload: dict, window_label: str, current_sentence: str,
+                 projects: dict) -> str:
     return f"""Activity for {window_label}:
 
 ```json
 {json.dumps(payload, indent=2)}
+```
+
+Author-written context for these projects (`project_context`):
+
+```json
+{json.dumps(projects, indent=2)}
 ```
 
 `open_source_all_time_NOT_this_window` is a standing lifetime total, not activity \
@@ -421,7 +441,7 @@ from this window. Do not describe those repositories as something worked on duri
 the window, and do not mention them at all unless they also appear in \
 `public_repos`.
 
-The README's About Me section currently ends with this sentence:
+The README's About Me currently carries this "right now" paragraph:
 
     {current_sentence}
 
@@ -430,11 +450,22 @@ Produce two things:
 1. `narrative`: 2-3 sentences summarizing what this window of work was actually about. \
 Lead with the dominant thread.
 
-2. `current_sentence`: the About Me sentence above, updated ONLY if the activity shows \
-the person has clearly moved on to a different primary project. That sentence contains \
-context you cannot verify from commit data -- if the project it names is still the most \
-active one, or you cannot tell, return it byte-for-byte unchanged. Never strip detail \
-from it to make it match the data."""
+2. `current_paragraph`: a fresh "what I'm building right now" paragraph for the About \
+Me section. Two or three sentences, 90 words maximum. Density matters more than \
+completeness here: pick the sharpest detail about each project and drop the rest. Lead with whatever the activity shows is the dominant \
+project. Describe what it *is* and what is interesting about it, not what this week's \
+commits touched: the reader wants to know the work, not the changelog.
+
+Rules for `current_paragraph`:
+- Use `project_context` for the substance. Those blurbs are author-written and \
+authoritative; prefer them over anything you infer from commit subjects.
+- Bold each project name and link it to its `url`, in markdown: **[Coo](url)**.
+- Only name a project that appears in this window's `public_repos`. If the dominant \
+work is private, say so and name whatever public project is also active, rather than \
+inventing detail.
+- If nothing public is active at all, return the previous paragraph unchanged.
+- Do not mention week counts, commit counts, or dates. This paragraph sits in a \
+biography, not a changelog; the activity section below already carries the numbers."""
 
 
 def parse_json_blob(text: str) -> dict:
@@ -466,7 +497,7 @@ def ask_claude_cli(prompt: str) -> dict | None:
         # Claude Code system prompt (which would be ~12k wasted tokens a run).
         "--restricted",
         "--system-prompt", SYSTEM_PROMPT + "\n\nRespond with raw JSON only -- no code "
-        "fences, no commentary. Keys: `narrative` (string), `current_sentence` (string).",
+        "fences, no commentary. Keys: `narrative` (string), `current_paragraph` (string).",
         "--disallowedTools", "Read", "Write", "Edit", "Glob", "Grep",
         "WebFetch", "WebSearch", "TodoWrite", "Task",
     ]
@@ -510,9 +541,9 @@ def ask_claude_api(prompt: str) -> dict | None:
                     "type": "object",
                     "properties": {
                         "narrative": {"type": "string"},
-                        "current_sentence": {"type": "string"},
+                        "current_paragraph": {"type": "string"},
                     },
-                    "required": ["narrative", "current_sentence"],
+                    "required": ["narrative", "current_paragraph"],
                     "additionalProperties": False,
                 },
             },
@@ -529,13 +560,14 @@ def ask_claude_api(prompt: str) -> dict | None:
     return json.loads(text)
 
 
-def ask_claude(payload: dict, window_label: str, current_sentence: str) -> dict | None:
+def ask_claude(payload: dict, window_label: str, current_sentence: str,
+               projects: dict) -> dict | None:
     backend = os.environ.get("NARRATIVE_BACKEND")
     if not backend:
         backend = "cli" if shutil.which("claude") else "api"
     if backend == "none":
         return None
-    prompt = build_prompt(payload, window_label, current_sentence)
+    prompt = build_prompt(payload, window_label, current_sentence, projects)
     return ask_claude_cli(prompt) if backend == "cli" else ask_claude_api(prompt)
 
 
@@ -666,15 +698,17 @@ def main() -> None:
     result = None
     if not is_empty(activity):
         try:
-            result = ask_claude(redact(activity), format_window(since, until), current_sentence)
+            result = ask_claude(
+                redact(activity), format_window(since, until), current_sentence, load_projects()
+            )
         except Exception as exc:  # narrative is a nice-to-have; the list is the point
             print(f"Narrative generation failed ({exc}); writing the plain list", file=sys.stderr)
 
     block = render_block(activity, (result or {}).get("narrative"), since, until, widened)
     readme = splice(readme, ACTIVITY_MARKERS, "\n" + block + "\n")
 
-    if result and result.get("current_sentence"):
-        readme = splice(readme, CURRENT_MARKERS, result["current_sentence"])
+    if result and result.get("current_paragraph"):
+        readme = splice(readme, CURRENT_MARKERS, result["current_paragraph"])
 
     readme_path.write_text(readme)
     print(f"Updated {readme_path} for {format_window(since, until)}")

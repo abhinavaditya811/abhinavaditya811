@@ -1,0 +1,23 @@
+{
+  "_comment": "Human-written context the weekly job blends with GitHub activity. Keys are repo names (owner/name, or bare name for your own). Anything not listed here is described from commit subjects alone, which reads thin. Edit this file when you start something new.",
+
+  "abhinavaditya811/coo": {
+    "display": "Coo",
+    "url": "https://github.com/abhinavaditya811/coo",
+    "blurb": "A kernel that maps a natural-language request onto an ordered plan of pre-defined capabilities and runs them on a Mac over HTTP. The model only selects capabilities and fills their parameters, never writes the code that executes, so there is no script-injection surface. Splits into an always-on edge and a Mac node so a request still gets an honest answer while the Mac is asleep."
+  },
+
+  "abhinavaditya811/settl": {
+    "display": "Settl",
+    "url": "https://settlnow.vercel.app",
+    "blurb": "An outreach and recovery engine that chases overdue invoices for freelancers and small businesses. It decides timing, tone, and channel, drafts in the customer's voice, clears a hard compliance gate, then reconciles the outcome. The decision core is deterministic and runs offline with no API keys."
+  },
+
+  "_past": [
+    {
+      "display": "Workhuman HR Analytics Capstone",
+      "url": "https://hr-capstone.vercel.app/",
+      "blurb": "End-to-end HR analytics pipeline using hybrid LLM/SLM intelligence to pull qualitative insight out of employee recognition data. Routing bulk NER and extraction to a fine-tuned local Llama-3-8B instead of a pure LLM API cut model serving cost 10x with no quality loss."
+    }
+  ]
+}
