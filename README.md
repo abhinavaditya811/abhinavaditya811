@@ -1,13 +1,13 @@
 # Hello! I'm Abhinav Aditya
 
 ### Data Scientist | AI Engineer | Full-Stack Engineer | Software Engineer
-[![Portfolio](https://img.shields.io/badge/Portfolio-Abhinav_Aditya.vercel.app-blue?style=for-the-badge&logo=google-chrome&logoColor=white)](https://1abhinavaditya.vercel.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-1abhinavaditya.vercel.app-blue?style=for-the-badge&logo=google-chrome&logoColor=white)](https://1abhinavaditya.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Abhinav_Aditya-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abhinavaditya811/)
 
 ---
 
 ## 📖 About Me
-I work with models everyday.
+I work with models every day.
 
 From my first C++ class in 11th grade to building AI systems at scale, I've been driven by solving real-world problems through technology.
 
@@ -48,7 +48,7 @@ Most of this window went into coo, splitting the kernel into an edge service and
 <!-- ACTIVITY:END -->
 
 ## 📈 Annual Activity
-![Snake animation](https://github.com/abhinavaditya811/abhinavaditya811/blob/output/github-contribution-grid-snake-dark.svg)
+![Snake animation](https://raw.githubusercontent.com/abhinavaditya811/abhinavaditya811/output/github-contribution-grid-snake-dark.svg)
 
 ## 🛠️ Tech Stack
 
@@ -64,7 +64,7 @@ Most of this window went into coo, splitting the kernel into an edge service and
 ### 🧠 AI, LLMs & Machine Learning
 ![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
-![Llama2](https://img.shields.io/badge/Llama_2-0467DF?style=for-the-badge&logo=meta&logoColor=white)
+![Llama3](https://img.shields.io/badge/Llama_3-0467DF?style=for-the-badge&logo=meta&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
 ![RAG](https://img.shields.io/badge/RAG-Retrieval--Augmented--Generation-orange?style=for-the-badge)
 ![Fine-Tuning](https://img.shields.io/badge/Fine--Tuning-Model--Optimization-blueviolet?style=for-the-badge)
