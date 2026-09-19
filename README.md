@@ -22,20 +22,25 @@ I **thrive** at the intersection of AI, data engineering, and product developmen
 ---
 
 <!-- ACTIVITY:START -->
-## 🗓️ What I'm Working On
+## 🗓️ Recent Activity
 
-*Sep 12 to Sep 19, 2026*
+*Aug 20 to Sep 19, 2026*
 
-Most of the week went into private work: 20 commits, Python, nothing I can say more about. On the public side I was around ten repos I don't own, including HKUDS/nanobot, asreview/asreview, and caipe-io/ai-platform-engineering, though none of it landed as a merged pull request or review in this window. The only public commits were on my profile repo: adding an automated weekly README activity section and then making the scheduled job run from a dedicated checkout, plus a push to coo.
+Most of this window went into coo, splitting the kernel into an edge service and a Mac-side node, adding a systemd installer so the edge can run on a Linux VPS, teaching the LaunchAgent installer about roles, and writing up how the split works. Outside my own repos, I sent a fix to enrique7mc/music-posters so the /api/health endpoint rejects non-GET requests with a 405, and reviewed two pull requests on caipe-io/ai-platform-engineering. The rest was some pushes to settl and about 45 commits across a few private repos, mostly Python with a bit of TypeScript.
 
 **My projects**
 
-- **[abhinavaditya811/abhinavaditya811](https://github.com/abhinavaditya811/abhinavaditya811)**: 2 commits · *Run the scheduled job from a dedicated checkout*
-- **[abhinavaditya811/coo](https://github.com/abhinavaditya811/coo)**: 1 push
+- **[abhinavaditya811/coo](https://github.com/abhinavaditya811/coo)**: 15 commits · *Document the split and the VPS deployment*
+- **[abhinavaditya811/settl](https://github.com/abhinavaditya811/settl)**: 3 pushes
 
-**Private work**: 20 commits in private repos
+**Open source and other repos**
 
-**Languages:** Python
+- **[enrique7mc/music-posters](https://github.com/enrique7mc/music-posters)**: 1 commit, 1 PR · *fix(api): reject non-GET requests to /api/health with 405*
+- **[caipe-io/ai-platform-engineering](https://github.com/caipe-io/ai-platform-engineering)**: 2 reviews
+
+**Private work**: 45 commits in private repos
+
+**Languages:** Python · TypeScript
 
 <sub>All time: contributions to **10** repositories I don't own, including [HKUDS/nanobot](https://github.com/HKUDS/nanobot), [asreview/asreview](https://github.com/asreview/asreview), [caipe-io/ai-platform-engineering](https://github.com/caipe-io/ai-platform-engineering).</sub>
 
