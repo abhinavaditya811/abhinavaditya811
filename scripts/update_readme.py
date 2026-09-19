@@ -464,6 +464,8 @@ authoritative; prefer them over anything you infer from commit subjects.
 work is private, say so and name whatever public project is also active, rather than \
 inventing detail.
 - If nothing public is active at all, return the previous paragraph unchanged.
+- Do not open with "Right now", "Currently", "At the moment" or similar. The heading \
+directly above the paragraph already says it; start with the work itself.
 - Do not mention week counts, commit counts, or dates. This paragraph sits in a \
 biography, not a changelog; the activity section below already carries the numbers."""
 
