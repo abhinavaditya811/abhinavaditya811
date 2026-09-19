@@ -15,9 +15,7 @@ From my first C++ class in 11th grade to building AI systems at scale, I've been
 
 **What I'm building right now.**
 
-<!-- CURRENT:START -->
-_Populating on the next scheduled run._
-<!-- CURRENT:END -->
+<!-- CURRENT:START -->Right now most of my time goes to **[Coo](https://github.com/abhinavaditya811/coo)**, a kernel that turns a natural-language request into an ordered plan of pre-defined capabilities and runs them on a Mac over HTTP. The model only picks capabilities and fills in their parameters, never writes the executing code, so there is no script-injection surface, and it splits into an always-on edge and a Mac node so you still get an honest answer while the Mac is asleep. I also keep **[Settl](https://settlnow.vercel.app)** moving, an invoice recovery engine whose decision core is deterministic and runs offline with no API keys.<!-- CURRENT:END -->
 
 Beyond tech, I bring leadership experience as a former sports captain and competitive athlete. Whether training for marathons or diving into the latest AI research, I approach every challenge with analytical thinking and determination.
 
@@ -30,7 +28,7 @@ I **thrive** at the intersection of AI, data engineering, and product developmen
 
 *Aug 20 to Sep 19, 2026*
 
-Most of this window went into coo, splitting the kernel into an edge service and a Mac-side node, adding a systemd installer so the edge can run on a Linux VPS, teaching the LaunchAgent installer about roles, and writing up how the split works. Outside my own repos, I sent a fix to enrique7mc/music-posters so the /api/health endpoint rejects non-GET requests with a 405, and reviewed two pull requests on caipe-io/ai-platform-engineering. The rest was some pushes to settl and about 45 commits across a few private repos, mostly Python with a bit of TypeScript.
+Most of the window went into Coo, splitting the kernel into an always-on edge process and a Mac-side node so a request still gets answered when the Mac is asleep, plus systemd and LaunchAgent installers and tailnet address lookup on Linux. Outside my own repos, I sent a fix to enrique7mc/music-posters (rejecting non-GET requests to /api/health with a 405) and reviewed two pull requests on caipe-io/ai-platform-engineering. The rest was steady private work and a few pushes to Settl.
 
 **My projects**
 
