@@ -304,6 +304,12 @@ def build_activity(contrib: dict, login: str, token: str, since: datetime) -> di
         elif row["commits"] or row["pushes"] or row["prs"] or row["reviews"]:
             public[name] = row
 
+    # Drop the profile repo itself: most of its commits are this script's own
+    # refreshes, and "I committed to my README" is not activity worth publishing.
+    public.pop(f"{login}/{login}", None)
+    for name in [n for n in public if n.lower() == f"{login.lower()}/{login.lower()}"]:
+        public.pop(name)
+
     owner_prefix = f"{login.lower()}/"
     for row in public.values():
         row["external"] = not row["name"].lower().startswith(owner_prefix)
@@ -370,7 +376,7 @@ def redact(activity: dict) -> dict:
             }
             for r in activity["repos"]
         ],
-        "external_repos": activity["external_repos"],
+        "open_source_all_time_NOT_this_window": activity["external_repos"],
         "private_work": {
             "commits": activity["private_commits"],
             "repo_count": activity["private_repo_count"],
@@ -409,6 +415,11 @@ def build_prompt(payload: dict, window_label: str, current_sentence: str) -> str
 ```json
 {json.dumps(payload, indent=2)}
 ```
+
+`open_source_all_time_NOT_this_window` is a standing lifetime total, not activity \
+from this window. Do not describe those repositories as something worked on during \
+the window, and do not mention them at all unless they also appear in \
+`public_repos`.
 
 The README's About Me section currently ends with this sentence:
 
