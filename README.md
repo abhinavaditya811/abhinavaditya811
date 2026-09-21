@@ -15,7 +15,7 @@ From my first C++ class in 11th grade to building AI systems at scale, I've been
 
 **What I'm building right now.**
 
-<!-- CURRENT:START -->Most of my time goes to **[Coo](https://github.com/abhinavaditya811/coo)**, a kernel that maps a natural-language request onto an ordered plan of pre-defined capabilities and runs them on a Mac over HTTP: the model only picks capabilities and fills their parameters, never writes the executing code, so there is no script-injection surface. **[Settl](https://settlnow.vercel.app)** chases overdue invoices for freelancers, with a deterministic decision core that runs offline. Outside my own projects I review on **[caipe-io/ai-platform-engineering](https://github.com/caipe-io/ai-platform-engineering)** and send small fixes elsewhere, like an HTTP method check in **[music-posters](https://github.com/enrique7mc/music-posters)**.<!-- CURRENT:END -->
+<!-- CURRENT:START -->Most of my time goes to **[Coo](https://github.com/abhinavaditya811/coo)**, a kernel that maps a natural-language request onto an ordered plan of pre-defined capabilities and runs them on a Mac over HTTP: the model only picks capabilities and fills their parameters, never writes the executing code. It now splits into an always-on edge and a Mac node, so a request still gets an honest answer while the Mac is asleep. Outside my own projects I review on **[caipe-io/ai-platform-engineering](https://github.com/caipe-io/ai-platform-engineering)** and send small fixes elsewhere, like an HTTP method check in **[music-posters](https://github.com/enrique7mc/music-posters)**.<!-- CURRENT:END -->
 
 Beyond tech, I bring leadership experience as a former sports captain and competitive athlete. Whether training for marathons or diving into the latest AI research, I approach every challenge with analytical thinking and determination.
 
@@ -26,9 +26,9 @@ I **thrive** at the intersection of AI, data engineering, and product developmen
 <!-- ACTIVITY:START -->
 ## 🗓️ Recent Activity
 
-*Aug 20 to Sep 19, 2026*
+*Aug 22 to Sep 21, 2026*
 
-Most of the window went into splitting Coo's kernel into an always-on edge and a Mac node, along with the deployment plumbing that required: a systemd installer for a Linux VPS, a role-aware LaunchAgent installer, tailnet address lookup on Linux, and docs for the new layout. Outside my own repos I opened a PR on enrique7mc/music-posters to reject non-GET requests to /api/health with a 405, and did two reviews on caipe-io/ai-platform-engineering. Settl got a few pushes, and the remaining bulk of commits was private work.
+Most of the window went into Coo: splitting the kernel into an always-on edge and a Mac-side node, adding a systemd installer so the edge can live on a Linux VPS, and making role and tailnet handling work on Linux as well as macOS. Outside my own repos I sent a fix to enrique7mc/music-posters so /api/health rejects non-GET requests with a 405, and did two reviews on caipe-io/ai-platform-engineering. Settl got a few deploys, and the larger share of commits landed in private work.
 
 **My projects**
 
@@ -40,13 +40,13 @@ Most of the window went into splitting Coo's kernel into an always-on edge and a
 - **[enrique7mc/music-posters](https://github.com/enrique7mc/music-posters)**: 1 commit, 1 PR · *fix(api): reject non-GET requests to /api/health with 405*
 - **[caipe-io/ai-platform-engineering](https://github.com/caipe-io/ai-platform-engineering)**: 2 reviews
 
-**Private work**: 45 commits in private repos
+**Private work**: 53 commits in private repos
 
 **Languages:** Python · TypeScript
 
 <sub>All time: contributions to **10** repositories I don't own, including [HKUDS/nanobot](https://github.com/HKUDS/nanobot), [asreview/asreview](https://github.com/asreview/asreview), [caipe-io/ai-platform-engineering](https://github.com/caipe-io/ai-platform-engineering).</sub>
 
-<sub>Updated automatically, last run Sep 19, 2026</sub>
+<sub>Updated automatically, last run Sep 21, 2026</sub>
 <!-- ACTIVITY:END -->
 
 ## 📈 Annual Activity
