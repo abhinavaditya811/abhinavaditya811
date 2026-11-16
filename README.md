@@ -15,7 +15,7 @@ From my first C++ class in 11th grade to building AI systems at scale, I've been
 
 **What I'm building right now.**
 
-<!-- CURRENT:START -->Much of my time goes to private repos. In public it goes to **[Coo](https://github.com/abhinavaditya811/coo)**, a kernel that turns a natural-language request into an ordered plan of pre-defined capabilities and runs them on a Mac over HTTP. The model only picks capabilities and fills in their parameters and never writes the code that runs, and an always-on edge still gives an honest answer while the Mac is asleep. I also keep **[Settl](https://settlnow.vercel.app)** going: it chases overdue invoices for freelancers, and its decision core is deterministic and runs offline.<!-- CURRENT:END -->
+<!-- CURRENT:START -->Most of my time goes to private repos. In public I've started **[filter_driver_dev](https://github.com/abhinavaditya811/filter_driver_dev)**, a new Rust project. So far the work there has been setting up how changes get in: pull requests, code-owner review and credentials, before the real code lands.<!-- CURRENT:END -->
 
 Beyond tech, I bring leadership experience as a former sports captain and competitive athlete. Whether training for marathons or diving into the latest AI research, I approach every challenge with analytical thinking and determination.
 
@@ -24,24 +24,23 @@ I **thrive** at the intersection of AI, data engineering, and product developmen
 ---
 
 <!-- ACTIVITY:START -->
-## 🗓️ Recent Activity
+## 🗓️ What I'm Working On
 
-*Aug 29 to Sep 28, 2026*
+*Nov 9 to Nov 16, 2026*
 
-Most of this month's commits went to private repos. In public, the work was Coo: I split the kernel into an always-on edge and a Mac-side node that resolves and executes requests, then made the edge run on a Linux VPS with a systemd installer, tailnet address detection on Linux and a role-aware LaunchAgent installer, and wrote up the split and the deployment. Settl got a few pushes but no new commits.
+Most of this week went to private repos. In public I worked on filter_driver_dev, a new Rust repo, where the commits and three small PRs were mostly about testing the pull request flow, code-owner rules and git credentials. No open source contributions this window.
 
 **My projects**
 
-- **[abhinavaditya811/coo](https://github.com/abhinavaditya811/coo)**: 11 commits · *Document the split and the VPS deployment*
-- **[abhinavaditya811/settl](https://github.com/abhinavaditya811/settl)**: 3 pushes
+- **[abhinavaditya811/filter_driver_dev](https://github.com/abhinavaditya811/filter_driver_dev)**: 6 commits, 3 PRs · *minor changes, test after this in a different pr*
 
-**Private work**: 50 commits in private repos
+**Private work**: 9 commits in private repos
 
-**Languages:** Python
+**Languages:** Rust
 
-<sub>All time: contributions to **10** repositories I don't own, including [HKUDS/nanobot](https://github.com/HKUDS/nanobot), [asreview/asreview](https://github.com/asreview/asreview), [caipe-io/ai-platform-engineering](https://github.com/caipe-io/ai-platform-engineering).</sub>
+<sub>All time: contributions to **9** repositories I don't own, including [HKUDS/nanobot](https://github.com/HKUDS/nanobot), [asreview/asreview](https://github.com/asreview/asreview), [caipe-io/ai-platform-engineering](https://github.com/caipe-io/ai-platform-engineering).</sub>
 
-<sub>Updated automatically, last run Sep 28, 2026</sub>
+<sub>Updated automatically, last run Nov 16, 2026</sub>
 <!-- ACTIVITY:END -->
 
 ## 📈 Annual Activity
