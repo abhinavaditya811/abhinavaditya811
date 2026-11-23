@@ -15,7 +15,7 @@ From my first C++ class in 11th grade to building AI systems at scale, I've been
 
 **What I'm building right now.**
 
-<!-- CURRENT:START -->Most of my time goes to private repos. In public I've started **[filter_driver_dev](https://github.com/abhinavaditya811/filter_driver_dev)**, a new Rust project. So far the work there has been setting up how changes get in: pull requests, code-owner review and credentials, before the real code lands.<!-- CURRENT:END -->
+<!-- CURRENT:START -->Most of my public work goes to **[settl-web](https://github.com/settldown/settl-web)**, an Astro site deployed on Vercel. I've mostly been working on how it ships and runs: a staging environment with repo checks, clean URLs, images served through CloudFront, and a Google Apps Script form handler that clears out its own old notification emails. I also do some private work on the side.<!-- CURRENT:END -->
 
 Beyond tech, I bring leadership experience as a former sports captain and competitive athlete. Whether training for marathons or diving into the latest AI research, I approach every challenge with analytical thinking and determination.
 
@@ -26,21 +26,21 @@ I **thrive** at the intersection of AI, data engineering, and product developmen
 <!-- ACTIVITY:START -->
 ## 🗓️ What I'm Working On
 
-*Nov 9 to Nov 16, 2026*
+*Nov 16 to Nov 23, 2026*
 
-Most of this week went to private repos. In public I worked on filter_driver_dev, a new Rust repo, where the commits and three small PRs were mostly about testing the pull request flow, code-owner rules and git credentials. No open source contributions this window.
+Most of this week went into settldown/settl-web, a repo I don't own. I opened PRs there to set up a staging environment with environment tagging and repo checks, serve pages without .html on Vercel, move images to CloudFront, and stop tracking the Apps Script code, and I reviewed one PR. I also added a Google Apps Script form handler with daily cleanup of old notification emails and did a little private work.
 
-**My projects**
+**Open source and other repos**
 
-- **[abhinavaditya811/filter_driver_dev](https://github.com/abhinavaditya811/filter_driver_dev)**: 6 commits, 3 PRs · *minor changes, test after this in a different pr*
+- **[settldown/settl-web](https://github.com/settldown/settl-web)**: 11 commits, 7 PRs, 1 review · *Stop tracking the Apps Script code (#7)*
 
-**Private work**: 9 commits in private repos
+**Private work**: 4 commits in private repos
 
-**Languages:** Rust
+**Languages:** Astro · Python
 
-<sub>All time: contributions to **9** repositories I don't own, including [HKUDS/nanobot](https://github.com/HKUDS/nanobot), [asreview/asreview](https://github.com/asreview/asreview), [caipe-io/ai-platform-engineering](https://github.com/caipe-io/ai-platform-engineering).</sub>
+<sub>All time: contributions to **10** repositories I don't own, including [HKUDS/nanobot](https://github.com/HKUDS/nanobot), [asreview/asreview](https://github.com/asreview/asreview), [caipe-io/ai-platform-engineering](https://github.com/caipe-io/ai-platform-engineering).</sub>
 
-<sub>Updated automatically, last run Nov 16, 2026</sub>
+<sub>Updated automatically, last run Nov 23, 2026</sub>
 <!-- ACTIVITY:END -->
 
 ## 📈 Annual Activity
